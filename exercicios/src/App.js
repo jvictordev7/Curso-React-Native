@@ -1,8 +1,10 @@
 import React from "react"
 import { StyleSheet, SafeAreaView } from 'react-native'
-import Parimpar from "./components/Parimpar"
 
 
+import Familia from "./components/relacao/Familia"
+import Membro from "./components/relacao/Membro"
+//import Parimpar from "./components/Parimpar"
 //import Diferenciar from "./components/contador/Diferenciar"
 //import ContadorV2 from "./components/contador/ContadorV2";
 //import Pai from "./components/indireta/pai";
@@ -17,9 +19,20 @@ import Parimpar from "./components/Parimpar"
 
 export default () => (
   <SafeAreaView style={style.App}>
-    <Parimpar num={5}/>
+
+    <Familia>
+      <Membro nome="Bia" sobrenome="Arruda" />
+      <Membro nome="Carlos" sobrenome="Arruda" />
+    </Familia>
+    <Familia>
+      <Membro nome="Ana" sobrenome="Silva" />
+      <Membro nome="Tílapio" sobrenome="Silva" />
+      <Membro nome="João" sobrenome="Victor" />
+      <Membro nome="Daniela" sobrenome="Antunes" />
+    </Familia>
 
       {/*
+    <Parimpar num={5}/>
     <Diferenciar  />
       <Botao />
       <ContadorV2 />
