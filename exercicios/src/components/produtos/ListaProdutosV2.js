@@ -17,7 +17,7 @@ export default props => {
             data={produtos}
             keyExtractor={i => `${i.id}`}
             renderItem={produtoRender}
-              />        
+                />        
         </>
     );
 };
