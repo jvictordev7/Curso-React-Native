@@ -2,7 +2,7 @@ import React from "react"
 import { StyleSheet, SafeAreaView } from 'react-native'
 
 
-import DigiteSeuNome from "./components/produtos/DigiteSeuNome.js"
+import DigiteSeuNome from "./components/DigiteSeuNome.js"
 //import ListaProdutosV2 from "./components/produtos/ListaProdutosV2"
 //import ListaProdutos from "./components/produtos/ListaProdutos"
 //import ListaProdutos from "./components/produtos/ListaProdutos"
