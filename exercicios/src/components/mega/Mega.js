@@ -4,11 +4,19 @@ import Estilo from '../estilo';
 
 export default class Mega extends Component {
 
+    state = {
+        qtdeNumero: this.props.qtdeNumero
+    }
+
+    constructor(props) {
+        super(props)
+    }
+
     render() {
         return (
             <Text style={Estilo.txtG}>
                 Gerador de Mega-Sena
-                {this.props.qtdeNumero}
+                {this.state.qtdeNumero}
             </Text>
         )
     }
